@@ -21,8 +21,7 @@ int frogjump(int arr[], int n, int i){
     if(i>=n)
         return 0;
 
-    if(arr[i] == 0)
-        return ;
+   // not compleeted 
 
     return frogjump(arr, n, i+1) + frogjump(arr, n,i+2);
 
