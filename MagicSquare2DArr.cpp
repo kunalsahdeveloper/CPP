@@ -4,38 +4,49 @@ using namespace std;
 
 bool magicSquare(int arr[100][100], int R,int C ){
 
+    if(R !=C)
+     return false;
+    
+    bool is
 
-    int s=0;
-    for(int i=0; i<R; i++){
+    int originalSum=0;
+    
         
-        for(int j=0; j<C; j++){
-            s+=arr[i][j];
-        }
-        
+    for(int j=0; j<C; j++){
+        s+=arr[i][j];
     }
-    int t;
+    
+    
+    
     for(int i=0; i<R; i++){
-        
+        int currSum=0;
+
         for(int j=0; j<C; j++){
-            t += arr[i][j];
-            if(s!=t)
+            currSum += arr[i][j];
+            if(originalSum != currSum)
                 return false;
         }
-        t=0;
+    }
+    for(int i=0; i<R; i++){
+        int currSum = 0;
+
         for(int j=0; j<C; j++){
-            t += arr[j][i];
-            if(s!=t)
+            currSum += arr[i][j];
+            if(originalSum != currSum)
                 return false;
         }
-        
     }
+
+        
+        
+    
     return true;
 
 }
 
 int main(){
     int R=3, C=3;
-    int arr[R][C] = {
+    int arr[100][100] = {
                     {2,7,6},
                     {9,5,1},
                     {4,3,8},
