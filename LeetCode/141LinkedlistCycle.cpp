@@ -22,7 +22,7 @@ class Solution {
                    
             if( !head || !head->next)
                 return false;
-                
+
             ListNode *f = head;
             ListNode *s = head;
     
@@ -36,4 +36,4 @@ class Solution {
             }
             return false;
         }
-    };
+    }; 
