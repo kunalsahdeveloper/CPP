@@ -11,7 +11,7 @@ void subSeq(string s, int i, string curr){
 
     subSeq(s, i+1, curr + s[i]);
     subSeq(s, i+1, curr);
-
+    
 
 }
 
