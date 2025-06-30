@@ -59,6 +59,9 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
     "ios": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "__split_buffer": "cpp",
+    "deque": "cpp",
+    "string": "cpp"
   }
 }
