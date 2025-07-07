@@ -14,11 +14,11 @@ vector<int> mergeSortedArrays(const vector<int>& a, const vector<int>& b) {
             result.push_back(b[j++]);
     }
 
-    while (i < a.size()) {
+    while(i < a.size()) {
         result.push_back(a[i++]);
     }
 
-    while (j < b.size()) {
+    while(j < b.size()) {
         result.push_back(b[j++]);
     }
 
